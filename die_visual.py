@@ -16,4 +16,6 @@ for i in range(100000):
 title = 'Roll of a dice'
 labels = {'x': 'Result', 'y': 'Frequency of Result'}
 fig = px.bar(x=range(1,13), y=count, title=title, labels=labels)
+
+fig.update_layout(xaxis_dtick=1)
 fig.show()
